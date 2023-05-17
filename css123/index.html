@@ -5,39 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        section h2 {
-            color: rgb(130, 130, 110);
-            }
             li {
             font-style: italic;
         }
         .page--title {font-size: 75px;}
-
             p {
             font-style: italic;
-        }
-        .list-item {
-            background-color: #212121;
         }
         .heading2 {
             font-style: italic;
         }
-
         .class2 {background-color: green}
-        .footer {
-            position: absolute;
-            width: 100%;
-            height: 252px;
-            top: 2094px;
-            background-color:  #212121;
-        }
         
+        #g {font-style: normal;}
     </style>
         <link rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" href="./new.css"/>
         <title>Document</title>
 </head>
 <body>
+    <!-- Навігація -->
     <header class="header">
         <a class="page--title" style="color:  #212121" href=""><span style="color:  #2196F3;">Web</span>Studio</a>
         <nav class="nav">
@@ -49,8 +36,11 @@
         </ul>
         </nav>
     </header>
-    <main>
+    <!-- Навігація (закінчення) -->
 
+    <!-- Головна частина сторінки -->
+    <main>
+        <!-- Section hero -->
         <section class="hero">
             <!-- Основний заголовок сторінки (тільки один на сторінці) -->
             <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
@@ -59,6 +49,7 @@
             <span class="hero__button--text">Замовити послугу</span>
             </button>
         </section>
+                <!-- Section hero (закінчення)-->
 
             <!-- Секція "Наша Команда" -->
         <section class="team">
@@ -88,7 +79,9 @@
         </section>
             <!-- Секція "Наша Команда" (закінчення) -->
 
+            <!-- Форма -->
         <section class="form">
+            <h3 class="form--title">Приєднуйтесь:</h3>
             <form action="">
             <input type="text" placeholder="Емейл" />
             <input type="password" placeholder="Пароль" />
@@ -96,7 +89,10 @@
             <button type="reset">Оновити форму</button>
             </form>
         </section>
+            <!-- Форма (закінчення)-->
     </main>
+        <!-- Головна частина сторінки (кінець)-->
+
             <!-- Підвал сайту -->
             <footer class="footer">
                 <a class="footer--title" href="/index.html" style="color: #2196F3" href=""><span style="color: white">Web</span>Studio</a>

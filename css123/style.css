@@ -2,23 +2,13 @@
 background-color: #ffffff;
 } */
 
-.hero {
-    background-color:  #212121;
-    text-align: center;
-    margin-top: 18px;
-}
-
-
-.class2 {
-    background-color:  rgb(99, 224, 172);
-}
-
-.nav{
+/*----------------- Навігаційний список --- -------------*/
+    .nav{
     display: block;
     background-color:  #212121;
     height: 80px;
 }
-.nav-list-item {
+    .nav-list-item {
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 16px;
@@ -26,38 +16,18 @@ background-color: #ffffff;
     letter-spacing: 0.02em;
     color: #212121;
 }
+/* Навігаційний список (закінчення) */
 
-ul,
-ol {
-    list-style: none;
-}
+/*------------------- Section hero ----------------------*/
 
-
-h3,
-p {color: #10395b;}
-
-.team--title {
+    .hero {
+    background-color:  #212121;
     text-align: center;
+    margin-top: 18px;
 }
-.team--img {
-    text-align: center;
-}
-
-#g {
-    font-style: normal;
-}
-
-h2 {font-size: 55px; }
-form{
-    display: block;
-    height: 45px;
-    background-color: #212121;
-    margin-top: 15px;
-}
-.hero__heading {
+    .hero__heading {
     width: 696px;
     height: 150px;
-
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
@@ -66,16 +36,7 @@ form{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #ffffff;
-}
-.list-item {
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
 }
 .hero__button {
     width: 216px;
@@ -87,26 +48,80 @@ form{
     
     outline: none;
     border: none;
-    }
+}
     .hero__button--text {
-        display: block;
-    
-        width: 152px;
-        height: 30px;
-    
-        margin: 0 auto;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-    
-        letter-spacing: 0.06em;
-    
-        color: #ffffff;
-    }
+    display: block;
 
+    width: 152px;
+    height: 30px;
+
+    margin: 0 auto;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+}
+/*----------------- Section hero (end)-------------------*/
+
+
+/*----------------- Стилізація написів ------------------*/
+    h2 {font-size: 55px; }
+    h3,
+    p {color: #10395b;}
+    ul,
+    ol {
+    list-style: none;
+}
+/*----------- Стилізація написів (закінчення) -----------*/
+
+
+/*----------------------- Команда -----------------------*/
+    .team--title {
+    text-align: center;
+}
+    .team--img {
+    text-align: center;
+}
+.class2 {
+    background-color:  rgb(99, 224, 172);
+}
+/*--------------- Команда (закінчення) ------------------*/
+
+
+/*--------------- Форма для заповнення ------------------*/
+    .form {
+    display: block;
+    height: 55px;
+    background-color: #212121;
+    margin-top: 15px;
+}
+    .form--title{
+        color: white;
+        margin: 0 auto;
+        margin-left: 25px;
+    }
+    form {
+        margin-left: 35px;
+        padding: 15px;
+        padding-top: 2px;
+    }
+/*--------- Форма для заповнення (закінчення) -----------*/
+
+
+/*------------------ Підвал сайту -----------------------*/
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 252px;
+        top: 2094px;
+        background-color:  #212121;
+}
     .footer--title {
         font-family:'Roboto';
         font-style: normal;
@@ -115,10 +130,11 @@ form{
         line-height: 30px;
         letter-spacing: 0.06em;
         margin-left: 30px;
-    }
+}
     .footer--text {
         margin-left: 40px;
         padding: 0;
         font-size: 25px;
-    }
+}    
     address {font-size: 25px; margin-top: 10px;}
+/*----------- Підвал сайту (закінчення) -----------------*/
