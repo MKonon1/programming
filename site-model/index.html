@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            li {
+            font-style: italic;
+        }
+        .page--title {font-size: 75px;}
+            p {
+            font-style: italic;
+        }
+        .heading2 {
+            font-style: italic;
+        }
+        .class2 {background-color: green}
+        
+        #g {font-style: normal;}
+    </style>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./new.css"/>
+        <title>Document</title>
+</head>
+<body>
+    <!-- Навігація -->
+    <header class="header">
+        <!-- Тайтл WebStudio-->
+        <a class="page--title" style="color:  #212121" href=""><span style="color:  #2196F3;">Web</span>Studio</a>
+        <nav class="nav">
+        <ul class="nav--text">
+            <li class="nav-list-item" style="background-color: rgb(99, 224, 172);"><a href="#q" style="color: #10395b;">Контакти</a></li>
+            <li class="nav-list-item"><a href="#w" style="color: white;">Студія</a></li>
+            <li class="nav-list-item"><a href="#team" style="color: white;">КомандаА</a></li>
+            <li class="nav-list-item"><a href="#e" style="color: white;">Портфоліо</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- Навігація (закінчення) -->
+
+    <!-- Головна частина сторінки -->
+    <main>
+        <!-- Section hero -->
+        <section class="hero">
+            <!-- Основний заголовок сторінки (тільки один на сторінці) -->
+            <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
+            <!-- Створення кнопки -->
+            <button class="hero__button button">
+            <span class="hero__button--text">Замовити послугу</span>
+            </button>
+        </section>
+                <!-- Section hero (закінчення)-->
+
+            <!-- Секція "Наша Команда" -->
+        <section class="team">
+            <h2 class="team--title" style="color: black;">Наша команда</h2>
+            <ul class="team--img">
+                <li class="class2">
+                    <img src="img.jpg" alt="" class="img">
+                    <h3 class="h3">Михайло Єрмаков</h3>
+                    <p class="p">UI designer</p>
+                </li>
+                <li class="class2">
+                    <img src="img.jpg" alt="" class="img">
+                    <h3 class="h3">Михайло Єрмаков</h3>
+                    <p class="p">UI designer</p>
+                </li>
+                <li class="class2">
+                    <img src="img.jpg" alt="" class="img">
+                    <h3 class="h3">Михайло Єрмаков</h3>
+                    <p class="p">UI designer</p>
+                </li>
+                <li class="class2">
+                    <img src="img.jpg" alt="" class="img">
+                    <h3 class="h3">Михайло Єрмаков</h3>
+                    <p class="p">UI designer</p>
+                </li>
+            </ul>
+        </section>
+            <!-- Секція "Наша Команда" (закінчення) -->
+
+            <!-- Форма -->
+        <section class="form">
+            <h3 class="form--title">Приєднуйтесь:</h3>
+            <form action="">
+            <input type="text" placeholder="Емейл" />
+            <input type="password" placeholder="Пароль" />
+            <button type="submit">Login</button>
+            <button type="reset">Оновити форму</button>
+            </form>
+        </section>
+            <!-- Форма (закінчення)-->
+    </main>
+        <!-- Головна частина сторінки (кінець)-->
+
+            <!-- Підвал сайту -->
+            <footer class="footer">
+                <a class="footer--title" href="/index.html" style="color: #2196F3" href=""><span style="color: white">Web</span>Studio</a>
+                <ul class="footer--text">
+                <li id="g"><a style="color: rgb(46, 129, 224);" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li id="g"><a style="color: rgb(46, 129, 224);" href="tel:380961111111">+38 096 111 11 11</a></li>
+                <address style="color: white;">м. Київ, пр-т Лесі Українки, 26</address>
+                </ul>
+            </footer>
+            <!-- Підвал сайту (закінчення)-->
+</body>
+</html>
