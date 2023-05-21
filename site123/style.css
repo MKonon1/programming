@@ -1,0 +1,85 @@
+/* * {
+    background-color: white;
+} */
+
+ul {list-style: none;}
+body {
+    position: relative;
+    width: 1200px;
+    height: 1543px;
+    background: #FFFFFF;
+}
+section {
+    position: absolute;
+    width: 906px;
+    height: 1314px;
+    left: 147px;
+    top: 182px;
+    }
+    ul {    
+        position: absolute;
+        width: 906px;
+        height: 1314px;
+        left: 147px;
+        top: 182px;}
+.h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    /* identical to box height */
+    
+    
+    color: #626262;}
+
+    .card1 {
+        position: absolute;
+        width: 420px;
+        height: 546px;
+        left: 148px;
+        top: 182px;
+}
+    .card2 {
+        position: absolute;
+        width: 420px;
+        height: 546px;
+        left: 633px;
+        top: 182px;
+    }
+    .card3 {
+        position: absolute;
+        width: 421px;
+        height: 516px;
+        left: 147px;
+        top: 858px;
+        }
+    .card4 {
+        position: absolute;
+        width: 420px;
+        height: 516px;
+        left: 633px;
+        top: 858px;
+}
+    .text {
+
+        font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #626262;
+    }
+.li--title {
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #B4AD9E;
+}
