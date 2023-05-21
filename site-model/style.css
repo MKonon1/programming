@@ -1,55 +1,121 @@
- /* * {
-background-color: #ffffff;
+/* універсальний селектор(*) - звертається до кожного елементу на сторінці */
+
+/* * {
+background-color: brown;
 } */
 
-/*----------------- Навігаційний список --- -------------*/
-.nav{
-    display: block;
-    background-color:  #212121;
-    height: 80px;
+/* селектор класу (.) звертається до усіх елементів у яких є атрибут клас з такою назвою (назву треба написати 
+після .) */
+
+.class2 {
+    background-color: aqua;
 }
-    .nav-list-item {
+
+/* селектор тегу  -  обирає за назвою тегу усі теги з такою назвою на сторінці і задає їм стилі які ви забажаєте*/
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+section {
+    background-color: #212121;
+}
+
+section {
+    background-color: brown;
+}
+
+/* селектор групи тегів - працює точно так же як селектор тегу, можемо звернутись до великої кількості тегів 
+через кому
+  */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*
+селектор ID - селектор(#) після рещітки треба вказати назву id до якого звертаємось
+ми обираємо елемент з вказаним ID і надаємо йому стилів 
+   */
+
+/* #q {
+    background-color: red;
+  } */
+
+/* селектор атрибуту [] =  спочатку записуємо назву тегу який шукаємо потім у квадратних дужочках записуємо
+атрибут та його значення тобто налаштування тегу за яким будемо шукати елемент
+  */
+
+button[type='submit'] {
+    background-color: #2196f3;
+}
+
+button[type='reset'] {
+    background-color: #212121;
+}
+
+  /* комбінований селектор */
+.class1 li {
+}
+
+/* 
+дочірній селектор > =  спочатки знаходимо батьківський тег від нього ставимо селектор (>) вказуємо дочірній тег
+(вкладений тег) після чого можна вказувати стилі для дочірнього тегу.
+  */
+
+header > nav[class='nav'] {
+    background-color: white;
+}
+
+.list-item {
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
     color: #212121;
 }
-/* Навігаційний список (закінчення) */
 
-/*------------------- Section hero ----------------------*/
+/*------------------------------------ Section hero -----------------------*/
 
-    .hero {
-    background-color:  #212121;
+.hero {
+    background-color: black;
     text-align: center;
-    margin-top: 18px;
 }
-    .hero__heading {
+
+.hero__heading {
     width: 696px;
-    height: 150px;
+    height: 120px;
+
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
+
     margin: 0 auto;
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color: #ffffff;
 }
+
 .hero__button {
     width: 216px;
     height: 50px;
-    
+
     background-color: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
+
     outline: none;
     border: none;
 }
-    .hero__button--text {
+
+.hero__button--text {
     display: block;
 
     width: 152px;
@@ -67,74 +133,7 @@ background-color: #ffffff;
 
     color: #ffffff;
 }
-/*----------------- Section hero (end)-------------------*/
 
-
-/*----------------- Стилізація написів ------------------*/
-    h2 {font-size: 55px; }
-    h3,
-    p {color: #10395b;}
-    ul,
-    ol {
-    list-style: none;
+.hero {
+    background-color: greenyellow;
 }
-/*----------- Стилізація написів (закінчення) -----------*/
-
-
-/*----------------------- Команда -----------------------*/
-    .team--title {
-    text-align: center;
-}
-    .team--img {
-    text-align: center;
-}
-.class2 {
-    background-color:  rgb(99, 224, 172);
-}
-/*--------------- Команда (закінчення) ------------------*/
-
-
-/*--------------- Форма для заповнення ------------------*/
-    .form {
-    display: block;
-    height: 55px;
-    background-color: #212121;
-    margin-top: 15px;
-}
-    .form--title{
-        color: white;
-        margin: 0 auto;
-        margin-left: 25px;
-    }
-    form {
-        margin-left: 35px;
-        padding: 15px;
-        padding-top: 2px;
-    }
-/*--------- Форма для заповнення (закінчення) -----------*/
-
-
-/*------------------ Підвал сайту -----------------------*/
-    .footer {
-        position: absolute;
-        width: 100%;
-        height: 252px;
-        top: 2094px;
-        background-color:  #212121;
-}
-    .footer--title {
-        font-family:'Roboto';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 30px;
-        letter-spacing: 0.06em;
-        margin-left: 30px;
-}
-    .footer--text {
-        margin-left: 40px;
-        padding: 0;
-        font-size: 25px;
-}    
-    address {font-size: 25px; margin-top: 10px;}
-/*----------- Підвал сайту (закінчення) -----------------*/
