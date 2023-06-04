@@ -1,0 +1,8 @@
+.text {
+    text-transform: lowercase;
+    text-indent: 2%;
+    white-space: normal;
+    word-break: normal;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+}
