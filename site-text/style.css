@@ -6,3 +6,23 @@
     letter-spacing: 2px;
     word-spacing: 20px;
 }
+
+.box {
+    display: block;
+    height: 300px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 6px;
+    border-color: black;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+.ul--text1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.ul--text2 {
+    font-family: 'Raleway';
+}
