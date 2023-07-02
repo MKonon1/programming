@@ -71,7 +71,7 @@ p {
 }
 
 .list {
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     /* flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -89,8 +89,21 @@ p {
     /* column-gap: 30px; */
     /* gap: 30px 50px; */
 }
+.listt{
+    flex-grow: 2;
+}
+.b{
+    flex-grow: 2;
+}
+.a{
+    flex-grow: 1;
+}
+
+.c{
+    flex-grow: 1;
+}
 .list-item {
-    flex-basis: 25%;
+    flex-basis: 5%;
     max-width: 100pxS;
 }
 .list-item:not(:last-child) {
