@@ -1,0 +1,20 @@
+.sidebar {
+    flex-basis: 200px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 8px;
+}
+.content {
+    flex-grow: 1;
+}
+.sidebar,
+.content {
+    height: 300px;
+    padding: 20px;
+    border: 5px dashed red;
+    border-radius: 5px;
+}
