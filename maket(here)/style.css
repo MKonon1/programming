@@ -155,6 +155,7 @@ a {
         background-color: var(--color);
 }
     .footer--title {
+        display: flexbox;
         font-family:'Roboto';
         font-style: normal;
         font-weight: 600;
