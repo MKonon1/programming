@@ -1,0 +1,26 @@
+* {
+    
+}
+:root {
+    --list-style: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+ul {list-style: none;}
+li {
+    display: list-item;
+    list-style: var(--list-style);
+}
+
+.section {
+    
+}
+.img-1 {
+
+}
+
+.img-2 {
+
+}
