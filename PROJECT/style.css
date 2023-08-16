@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* text-decoration: none; */
+    list-style: none;
+}
+:root {
+    --theme-color:#1E252B;
+    --text-color:#FFFFFF8C;
+}
+
+.source {
+    color: #1E252B;
+    font-family:'Poppins', sans-serif;
+    /* font-size: 20px;
+    font-weight: 45px; */
+}
+a {color: #1E252B;}
+
+/* Перевірка роботи SVG зображення
+.vector-image {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+} */
