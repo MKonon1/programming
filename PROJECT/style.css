@@ -56,7 +56,7 @@ body {
     
     padding: 200px 0;
 
-
+    margin: 0 auto;
 }
 
 .container {
@@ -70,17 +70,133 @@ body {
     grid-template-columns: repeat(3, 392px);
     grid-template-rows: repeat(2, 1fr);
     gap: 100px 25px;
+
+
+    margin-bottom: 100px;
+    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .popular-item {
 
-    padding-top: 33px;
+    /* padding-top: 33px;
     padding-bottom: 38px;
     padding-left: 33px;
-    padding-right: 33px;
+    padding-right: 33px; */
+
+    padding: 33px;
 
     border-radius: 15px;
     background: #1E252B;
+
+    
+}
+
+/* .popular-item:focus-visible {
+    border-color: none;
+} */
+
+.Load-more {
+    display: block;
+    width: 184px;
+    height: 64px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #1E252B;
+
+    color: #FF6E30;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.Load-more:hover {
+    background: #FF6E30;
+
+    color:#FFF;
+}
+
+/* .popular-item:hover::before {
+    display: block;
+
+    content: "";
+
+    width: 65px;
+    height: 65px;
+
+    background: rgba(255, 110, 48, 0.60);
+    filter: blur(40px);
+    position: absolute;
+    top: 6px;
+    right: 16px;
+} */
+
+.ellipse {
+    display: block;
+    position: absolute;
+
+
+    /* width: 65px;
+    height: 65px; */
+
+    fill: rgba(255, 110, 48, 0.60);
+    filter: blur(25px);
+    top: 6px;
+    right: 16px;
+    visibility: inherit;
+}
+
+.ellipse:hover {
+    display: block;
+    position: absolute;
+
+
+    /* width: 65px;
+    height: 65px; */
+
+    fill: rgba(255, 110, 48, 0.60);
+    filter: blur(25px);
+    top: 6px;
+    right: 16px;
+    visibility:inherit;
+}
+/* .mask-rectangle {
+    display: block;
+
+    width: 392px;
+    height: 294px;
+
+    border-radius: 15px;
+    background: #283036;
+    
+} */
+
+.popular-item:hover {
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    background: rgba(40, 48, 54, 0.60);
+    backdrop-filter: blur(25px);    
+}
+
+
+.popular-block-1 {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.popular-block-1::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(./assets/Images/grommet-icons_figma.png);
 }
 
 .popular-block {
@@ -88,13 +204,37 @@ body {
     margin-bottom: 30px;
 
 }
+
 .popular-block::before {
     content: "";
     display: block;
     width: 64px;
     height: 64px;
-    background-image: url(./assets/Images/grommet-icons_figma.png);
+    /* border-top-right-radius: 15px; */
+    /* background-image: url(./assets/Images/grommet-icons_figma.png); */
 }
+
+.button-item {
+    display: block;
+
+    height: 42px;
+    width: 42px;
+
+    margin-right: 12px;
+}
+
+.button-item-2 {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    margin-right: 124px;
+}
+
+
+
+
 
 .item-heading {
     color: rgba(255, 255, 255, 0.78);
@@ -103,6 +243,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-left: 30px;
 }
 
 .item-paragraph {
@@ -112,6 +253,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 30px;
 }
 
 .item-text {
@@ -133,21 +275,49 @@ body {
 } */
 
 .button-heart {
+    display: block;
     border-radius: 8px;
     background: #1E252B;
     width: 42px;
     height: 42px;
     padding: 7px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
+.button-heart:hover {
+    background: #283036;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+
 .button-file {
+    display: block;
     border-radius: 8px;
     background: #1E252B;
+
+
+    /* margin-top: 9px; */
+    box-sizing: border-box;
+
     width: 42px;
     height: 42px;
-    padding: 7px;
-    margin-top: 9px;
+
+    padding-top: 7px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+}
+
+.button-file:hover {
+    background: #283036;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.file-icon {
+    height: 30px;
+    width: 30px;
+
+
 }
 
 .button-1 {
@@ -168,9 +338,9 @@ body {
     line-height: normal;
 }
 
-.file-icon {
+/* .file-icon {
     margin-right: 130px;
-}
+} */
 
 
 .item-button-1 {
@@ -184,29 +354,37 @@ body {
 .button-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .headings {
     width: 455px;
     height: 147px;
+
+    margin: 0 auto;
+    margin-bottom: 90px;
 }
 
 .headings-h2 {
     font-size: 48px;
     text-align: center;
     line-height: 130%;
+
+    margin-bottom: 25px;
 }
 
 .headings-p {
     width: 427px;
-    /* height: 60px; */
-    /* align-self: center; */
-    font-weight: 500;
+
+    color: rgba(255, 255, 255, 0.55);
     text-align: center;
-    padding-top: 25px;
-    line-height: 30px; 
-    padding-left: 14px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+
+    margin: 0 auto;
 }
 
 /* .heart {
@@ -226,6 +404,32 @@ body {
     margin-left: 33px;
 }
 
+
+
+
+
+.button-visit {
+    width: 106px;
+    height: 42px;
+
+    border-radius: 8px;
+    background: #1E252B;
+
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.button-visit:hover {
+
+    background: #FF6E30;
+    color: #FFF;
+
+}
 
 .block-1-title {
     display: flex;
@@ -343,10 +547,21 @@ body {
     height: 0.5px;
 }
 
-.heart:active {
-    background-color: #FD3B41;
-    opacity: 100%;
+/* .button-heart:hover .heart {
     
+    background: #FD3B41;
+    opacity: 100%;
+} */
+
+.heart-test:hover {
+    fill: #FD3B41 !important;
+    fill-opacity: 100;
+}
+
+.file-icon-test:hover {
+    fill: #FFFFFF8C;
+    fill-opacity: 55;
+
 }
 
 /* Перевірка роботи SVG зображення
@@ -354,4 +569,4 @@ body {
     display: flex;
     justify-content: center;
     justify-content: flex-end;
-} */
+}
