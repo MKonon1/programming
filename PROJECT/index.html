@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./script.json" />
+		<script defer src="./slider.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -37,7 +37,16 @@
 						</div>
 						<div class="nav-menu">
 							<a class="nav-home" href="./index.html">Home</a>
-							<a class="nav-categories" href="./index.html">Categories</a>
+							<!-- <a class="nav-categories" href="./index.html">Categories</a> -->
+							<div class="dropdown">
+								<button class="btn-dropdown">Categories</button>
+								<div class="dropdown-content">
+									<a href="#popular">Popular</a>
+									<a href="#blog">Blog</a>
+									<a href="#join">Join us</a>
+									<a href="#contact">Contact</a>
+								</div>
+							</div>
 							<a class="nav-my-collections" href="./index.html">My Collections</a>
 							<a class="nav-blog" href="./index.html">Blog</a>
 						</div>
@@ -114,7 +123,7 @@
 				</div>
 			</section>
 
-			<section class="popular">
+			<section class="popular" id="popular">
 				<div class="container">
 					<!-- <h2 class="headings-h2">Most Popular Tools</h2> -->
 					<div class="headings">
@@ -794,110 +803,66 @@
 				<div></div>
 			</section>
 
-			<!-- <section class="testimonial">
-
-
-
-            <div class="testimonial-group">
-
-                <div class="testimonial-left-button"></div>
-
-                <div class="testimonial-visual">
-
-                    <img class="testimonial-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash (1).png" alt="">
-
-                    <div class="testimonial-shapes">
-
-                        <svg class="img-circle-1" xmlns="http://www.w3.org/2000/svg" width="232" height="232"
-                            viewBox="0 0 232 232" fill="none">
-                            <circle cx="116" cy="116" r="115.652" fill="#283036" />
-                        </svg>
-
-                        <div class="img-circle-2"></div>
-
-                        <div class="img-circle-3"></div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-
-        </section> -->
-
-			<section class="section-with-slider">
-				<h2>SLider</h2>
-				<!-- Slider main container -->
-				<div class="swiper">
-					<!-- Additional required wrapper -->
+			<section class="section section-customer-reviews customer-reviews">
+				<h2 class="visually-hidden">Customer-reviews</h2>
+				<div class="swiper mySwiper">
 					<div class="swiper-wrapper">
-						<!-- Slides -->
 						<div class="swiper-slide">
-							<div class="swiper-createdcontainer">
-								<div class="img-biography">
-									<img style="display: block; position: relative" src="./assets/svg/6(Ronald-Richards-section)/Group-1418.png" alt="" />
-									<div class="biography-div">
-										<p class="biography-name">Ronald Richards</p>
-										<p class="biography-job">Product Manager</p>
-									</div>
+							<div class="container container-customer-reviews slider">
+								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
+								<div class="customer-reviews-box slider-text-wrapper">
+									<p class="customer-reviews-text slider-text">
+										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+									</p>
 								</div>
-								<p class="biography-quote">
-									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
-									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-								</p>
+								<ul class="customer-reviews-list">
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+								</ul>
+								<p class="customer-reviews-underlist">Emily, Los Angeles</p>
 							</div>
 						</div>
-
 						<div class="swiper-slide">
-							<div class="swiper-createdcontainer">
-								<div class="img-biography">
-									<img style="display: block; position: relative" src="./assets/svg/6(Ronald-Richards-section)/Group-1418.png" alt="" />
-									<div class="biography-div">
-										<p class="biography-name">Ronald Richards</p>
-										<p class="biography-job">Product Manager</p>
-									</div>
+							<div class="container container-customer-reviews slider">
+								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
+								<div class="customer-reviews-box slider-text-wrapper">
+									<p class="customer-reviews-text slider-text">
+										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+									</p>
 								</div>
-								<p class="biography-quote">
-									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
-									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-								</p>
+								<ul class="customer-reviews-list">
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+								</ul>
+								<p class="customer-reviews-underlist">Amanda, New York</p>
 							</div>
 						</div>
-						<!-- 3 slide -->
 						<div class="swiper-slide">
-							<div class="swiper-createdcontainer">
-								<div class="img-biography">
-									<img style="display: block; position: relative" src="./assets/svg/6(Ronald-Richards-section)/Group-1418.png" alt="" />
-									<div class="biography-div">
-										<p class="biography-name">Ronald Richards</p>
-										<p class="biography-job">Product Manager</p>
-									</div>
+							<div class="container container-customer-reviews slider">
+								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
+								<div class="customer-reviews-box slider-text-wrapper">
+									<p class="customer-reviews-text slider-text">
+										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+									</p>
 								</div>
-								<p class="biography-quote">
-									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
-									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-								</p>
+								<ul class="customer-reviews-list">
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+									<li class="customer-reviews-item"></li>
+								</ul>
+								<p class="customer-reviews-underlist">Kira, London</p>
 							</div>
 						</div>
 					</div>
-					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
-
-					<!-- If we need navigation buttons -->
-
-					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
-
-					<!-- If we need scrollbar -->
-					<div class="swiper-scrollbar visually-hidden"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</section>
 
-			<section class="join">
+			<section class="join" id="join">
 				<div class="join-title">
 					<h2 class="join-heading">Become a contributor?</h2>
 					<p class="join-paragraph">Join us and get tips & tricks to become a great Designer and Developer</p>
@@ -916,7 +881,7 @@
 			</section>
 		</main>
 
-		<footer>
+		<footer id="contact">
 			<div class="footer-line"></div>
 			<div class="footer-lists">
 				<div class="antools">

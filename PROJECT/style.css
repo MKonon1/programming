@@ -1191,222 +1191,6 @@ body {
 	margin-right: 43px;
 }
 
-/* .testimonial {
-
-    display: block;
-    width: 1224px;
-    height: 600px;
-
-
-    margin: 0 auto;
-
-    position: relative;
-
-    padding-top: 200px;
-    box-sizing: content-box;
-} */
-
-/* .testimonial-illustration {
-    display: block;
-
-
-    width: 666px;
-    height: 832px;
-
-
-
-    position: absolute;
-
-    margin-left: -137px;
-    padding-top: -245px;
-    margin-bottom: -95px;
-
-    margin-left: 51px;
-} */
-
-/* .testimonial-group {
-    display: block;
-    width: 1224px;
-    height: 492px;
-}
-
-
-.testimonial-img {
-    display: block;
-    margin: 0 auto;
-
-    width: 392px;
-    height: 492px;
-
-
-    border-radius: 8px;
-
-
-
-
-    position: relative;
-    float: right;
-
-
-}
-
-.testimonial-left-button {
-    display: block;
-    width: 80px;
-    height: 100px;
-    border-radius: 8px;
-    background: #1E252B;
-    float: left;
-    margin-top: 196px;
-    position: relative;
-
-}
-
-.testimonial-visual {
-    display: block;
-    width: 399px;
-    height: 492px;
-
-    position: relative;
-    margin: 0 auto;
-    margin-left: 114px;
-    box-sizing: content-box;
-
-}
-
-.img-circle-1 {
-    width: 231.304px;
-    height: 231.304px;
-    flex-shrink: 0;
-    fill: #283036;
-
-    position: absolute;
-
-    margin: 74.3px;
-}   
-
-.testimonial-shapes {
-    display: block;
-    width: 380px;
-    height: 380px;
-
-    position: absolute;
-
-    margin-top: 87px;
-} */
-
-.swiper {
-	/* перевірти */
-	width: 1194px !important;
-	/* height: px; */
-	margin: 0 auto;
-}
-.swiper-wrapper {
-	box-sizing: content-box;
-}
-/* -pay attention */
-.swiper-slide {
-	/* width: 1194px !important; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* height: 600px; */
-}
-.img-biography {
-	margin-right: 70px;
-}
-.biography-div {
-	/* position: absolute; */
-	position: relative;
-	/* bottom: 5%; */
-	bottom: 120px;
-	left: 130px;
-	border-radius: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	background: rgba(40, 48, 54, 0.2);
-	backdrop-filter: blur(25px);
-	padding: 10px 20px;
-	width: 265px;
-	height: 91px;
-	/* left: 25%; */
-}
-.biography-name {
-	color: rgba(255, 253, 253, 0.78);
-	font-family: 'Poppins', sans-serif;
-	font-size: 26px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 0.39px;
-}
-.biography-job {
-	color: rgba(255, 253, 253, 0.55);
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-.biography-quote {
-	color: rgba(255, 255, 255, 0.78);
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px; /* 214.286% */
-	letter-spacing: 0.21px;
-	width: 393px;
-	/* margin-left: 60px; */
-	position: relative;
-	bottom: 50px;
-}
-.biography-quote:before {
-	content: '';
-	display: block;
-	background-image: url(./assets/imgs/“.png);
-	width: 101px;
-	height: 97px;
-	position: absolute;
-	right: 340px;
-	bottom: 140px;
-}
-.swiper-createdcontainer {
-	display: flex;
-	align-items: center;
-	/* width: 900px;
-    margin: 0 auto;
-    justify-content: center;
-    position: relative;
-    bottom: 50px; */
-}
-.swiper-button-prev {
-	color: rgba(255, 255, 255, 0.28) !important;
-}
-.swiper-button-next {
-	color: rgba(255, 255, 255, 0.28) !important;
-}
-.swiper-button-prev:hover {
-	color: var(--color-focus) !important;
-}
-.swiper-button-next:hover {
-	color: var(--color-focus) !important;
-}
-.swiper-pagination {
-	position: relative;
-}
-/* дивина */
-
-.swiper-pagination-bullet {
-	background-color: var(--color-focus);
-	width: 45px;
-	height: 8px;
-	border-radius: 4px;
-}
-
-/* .section-with-slider {
-    margin: 0 auto;
-} */
-
 .join {
 	display: block;
 
@@ -1746,4 +1530,96 @@ body {
 .categories-development {
 	display: block;
 	margin-top: 10px;
+}
+/* -------------------------------------------- */
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.btn-dropdown {
+	background: #1e252b;
+	color: rgba(255, 255, 255, 0.55);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.dropdown-content a {
+	display: block;
+	color: rgba(255, 255, 255, 0.55);
+	padding: 5px;
+	text-decoration: none;
+}
+.dropdown-content a:hover {
+	text-decoration: none;
+	color: #ffa537;
+	background-color: rgba(40, 48, 54, 0.6);
+}
+.dropdown-content a:active {
+	color: #ffffff;
+}
+
+/* -------------------------------------------------------------- */
+
+.swiper {
+	display: flex;
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-wrapper {
+	padding-bottom: 45px;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #1e252b;
+	background-image: url(./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash\\.png);
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 12px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: red;
+	display: none;
+}
+
+.swiper-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
