@@ -14,6 +14,9 @@
 	/* --h-weight:500; */
 	--h4-color: #ffa5378c;
 	--button-icon-color: #ffffff61;
+	--button-color: #fff;
+	--color: #ff6e30;
+	--color-button-swiper: #ff6e30;
 }
 
 .source {
@@ -1574,7 +1577,7 @@ body {
 }
 
 /* -------------------------------------------------------------- */
-
+/* 
 .swiper {
 	display: flex;
 	width: 1000px;
@@ -1622,4 +1625,122 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+} */
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
+
+#sl-b-pr:hover {
+	color: var(--button-color);
+}
+#sl-b-pr:active {
+	color: var(--button-color);
+}
+#sl-b-pr {
+	color: var(--color);
+}
+#sl-b-nxt:hover {
+	color: var(--button-color);
+}
+#sl-b-nxt:active {
+	color: var(--button-color);
+}
+#sl-b-nxt {
+	color: var(--color);
+}
+.swiper-pagination-bullet-active {
+	background-color: var(--color-button-swiper);
+}
+.swiper-pagination-bullet {
+	width: 45px;
+	height: 8px;
+	border-radius: 5px;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+	margin: 0 10px;
+}
+
+.text-information-manager {
+	display: block;
+	height: 180px;
+	width: 393px;
+
+	color: rgba(255, 255, 255, 0.78);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px; /* 214.286% */
+	letter-spacing: 0.21px;
+	position: absolute;
+	opacity: 0.78;
+	top: 20%;
+	right: 0%;
+}
+
+.information-manager {
+	display: block;
+	width: 849px;
+	height: 492px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.card {
+	display: block;
+	width: 265px;
+	height: 91px;
+
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(40, 48, 54, 0.2);
+	backdrop-filter: blur(25px);
+	position: absolute;
+	left: 15%;
+	bottom: 5%;
+}
+
+.name-manager {
+	color: rgba(255, 253, 253, 0.78);
+
+	font-family: Poppins;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.39px;
+	position: relative;
+	left: 8%;
+	top: 10%;
+}
+.position {
+	color: rgba(255, 253, 253, 0.55);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: relative;
+	left: 8%;
+	top: 10%;
+}
+
+/* 
+.quotes {
+	transform: rotate(19.166deg);
+
+	font-family: Lora;
+	font-size: 250px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	background: linear-gradient(189deg, rgba(252, 252, 252, 0) 20.34%, rgba(255, 255, 255, 0.5) 155.72%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */

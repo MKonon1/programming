@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	</head>
 
 	<body>
@@ -119,7 +121,7 @@
 							</svg>
 						</div>
 					</div>
-					<div class="illustration-block"><img class="Illustration" src="./assets/Images/Illustration (1).png" alt="" /></div>
+					<div class="illustration-block"><img class="Illustration" src="./assets/Images/Illustration.png" alt="" /></div>
 				</div>
 			</section>
 
@@ -803,62 +805,64 @@
 				<div></div>
 			</section>
 
-			<section class="section section-customer-reviews customer-reviews">
-				<h2 class="visually-hidden">Customer-reviews</h2>
-				<div class="swiper mySwiper">
+			<section id="section-manager">
+				<!-- Slider main container -->
+				<div class="swiper container">
+					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
+						<!-- Slides -->
 						<div class="swiper-slide">
-							<div class="container container-customer-reviews slider">
-								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
-								<div class="customer-reviews-box slider-text-wrapper">
-									<p class="customer-reviews-text slider-text">
-										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-									</p>
+							<div class="information-manager">
+								<div>
+									<img src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="" />
+									<div class="card">
+										<h3 class="name-manager">Ronald Richards</h3>
+										<p class="position">Product Manager</p>
+									</div>
 								</div>
-								<ul class="customer-reviews-list">
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-								</ul>
-								<p class="customer-reviews-underlist">Emily, Los Angeles</p>
+								<p class="text-information-manager">
+									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+								</p>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="container container-customer-reviews slider">
-								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
-								<div class="customer-reviews-box slider-text-wrapper">
-									<p class="customer-reviews-text slider-text">
-										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-									</p>
+							<div class="information-manager">
+								<div>
+									<img src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="" />
+									<div class="card">
+										<h3 class="name-manager">Ronald Richards</h3>
+										<p class="position">Product Manager</p>
+									</div>
 								</div>
-								<ul class="customer-reviews-list">
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-								</ul>
-								<p class="customer-reviews-underlist">Amanda, New York</p>
+								<p class="text-information-manager">
+									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+								</p>
+								<!-- <p class="quotes">“</p> -->
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="container container-customer-reviews slider">
-								<img class="customer-img" src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="User 1" />
-								<div class="customer-reviews-box slider-text-wrapper">
-									<p class="customer-reviews-text slider-text">
-										Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-									</p>
+							<div class="information-manager">
+								<div>
+									<img src="./assets/Images/david-suarez-4a1nNlrS5ZI-unsplash.png" alt="" />
+									<div class="card">
+										<h3 class="name-manager">Ronald Richards</h3>
+										<p class="position">Product Manager</p>
+									</div>
 								</div>
-								<ul class="customer-reviews-list">
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-									<li class="customer-reviews-item"></li>
-								</ul>
-								<p class="customer-reviews-underlist">Kira, London</p>
+								<p class="text-information-manager">
+									Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+									Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+								</p>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+					<!-- If we need pagination -->
 					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev" id="sl-b-pr"></div>
+					<div class="swiper-button-next" id="sl-b-nxt"></div>
 				</div>
 			</section>
 
@@ -932,6 +936,8 @@
 			</div>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="./slider.js" type="module"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="./slider.js" type="module"></script>
 	</body>
